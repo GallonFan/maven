@@ -8,7 +8,7 @@ node{
     }
     stage('mvn build'){
         //mvn构建
-        sh "mvn install -Dmaven.test.skip=true"
+        sh "mvn install"
     }
     stage('deploy'){
         //执行部署脚本
